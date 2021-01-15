@@ -42,12 +42,13 @@ test:
 
 about:
   home: https://github.com/bethatkinson/rpart, https://cran.r-project.org/package=rpart
-  license: GPL-2 | GPL-3
+  license: GPL-2.0-or-later
   summary: Recursive partitioning for classification,  regression and survival trees.  An implementation
     of most of the  functionality of the 1984 book by Breiman, Friedman, Olshen and
     Stone.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
