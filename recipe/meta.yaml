@@ -1,4 +1,4 @@
-{% set version = '4.1-15' %}
+{% set version = "4.1.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rpart_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rpart/rpart_{{ version }}.tar.gz
-  sha256: 2b8ebe0e9e11592debff893f93f5a44a6765abd0bd956b0eb1f70e9394cfae5c
+  sha256: 27ec75258a5a3459ad999f5f36760ead974930744249605bf8465f234f31425c
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,9 +43,7 @@ test:
 about:
   home: https://github.com/bethatkinson/rpart, https://cran.r-project.org/package=rpart
   license: GPL-2.0-or-later
-  summary: Recursive partitioning for classification,  regression and survival trees.  An implementation
-    of most of the  functionality of the 1984 book by Breiman, Friedman, Olshen and
-    Stone.
+  summary: Recursive partitioning for classification,  regression and survival trees.  An implementation of most of the  functionality of the 1984 book by Breiman, Friedman, Olshen and Stone.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
