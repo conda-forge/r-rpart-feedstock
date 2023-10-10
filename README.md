@@ -3,6 +3,7 @@ About r-rpart-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rpart-feedstock/blob/main/LICENSE.txt)
 
+
 About r-rpart
 -------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/bethatkinson/rpart, https://cran.r-project.org/package=
 Package license: GPL-2.0-or-later
 
 Summary: Recursive partitioning for classification,  regression and survival trees.  An implementation of most of the  functionality of the 1984 book by Breiman, Friedman, Olshen and Stone.
+
 About r-rpart
 -------------
 
