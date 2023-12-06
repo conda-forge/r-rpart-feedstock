@@ -1,4 +1,4 @@
-{% set version = "4.1.21" %}
+{% set version = "4.1.23" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rpart_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rpart/rpart_{{ version }}.tar.gz
-  sha256: e77c1c675b211705be18181913a97b67379ccae699c1406acf7814ad8a45622b
+  sha256: f9b89aed6aa6cea656a2dcb271574e969ce2b1c98beb07bd91e17339f6daabaf
 
 build:
   merge_build_host: true  # [win]
